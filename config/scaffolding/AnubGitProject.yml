@@ -7,6 +7,63 @@ packages:
   gitUrl: https://github.com/anusha-bonam-IBM-0
   gitUsername: anusha-bonam-IBM-0
   gitBranch: main
+services:
+- serviceName: project.anubgit.integrations:Copy_soapConn
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: project.anubgit.soap.connectors.testsoap_.connectors:GlobalWeatherSoap_GetCitiesByCountry
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: pub.client:soapClient
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.836
+- serviceName: project.anubgit.integrations:dafdoctypeflow
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.836
+- serviceName: project.anubgit.soap.connectors.testsoap_.connectors:GlobalWeatherSoap_GetWeather
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: project.anubgit.soap.connectors.testsoap_.docTypes:GlobalWeatherSoap_GetCitiesByCountry_Input
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: project.anubgit.soap.connectors.testsoap_.docTypes:GlobalWeatherSoap_GetCitiesByCountry_Output
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: project.anubgit.soap.connectors.testsoap_.docTypes:GlobalWeatherSoap_GetWeather_Input
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: project.anubgit.soap.connectors.testsoap_.docTypes:GlobalWeatherSoap_GetWeather_Output
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: project.anubgit.soap.connectors.testsoap_.responseServices:GlobalWeatherSoap_GetCitiesByCountry_Response
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: project.anubgit.soap.connectors.testsoap_.responseServices:GlobalWeatherSoap_GetWeather_Response
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: project.anubgit.soap.connectors.testsoap_.responseServices:genericFault_Response
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
+- serviceName: project.anubgit.soap.connectors:testsoap
+  packages:
+  - name: AnubGitProject
+    version: "1.0"
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
